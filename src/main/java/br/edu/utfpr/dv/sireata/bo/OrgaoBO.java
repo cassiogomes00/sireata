@@ -2,9 +2,9 @@ package br.edu.utfpr.dv.sireata.bo;
 
 public class OrgaoBO {
 
-  private OrgaoDao dao;
+  private IDao dao;
 
-  public OrgaoBO(OrgaoDao dao) {
+  public OrgaoBO(IDao dao) {
     this.dao = dao;
   }
 

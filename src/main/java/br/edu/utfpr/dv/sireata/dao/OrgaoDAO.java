@@ -1,6 +1,6 @@
 package br.edu.utfpr.dv.sireata.dao;
 
-public class OrgaoDAO {
+public class OrgaoDAO implements IDao {
 
   public Orgao buscarPorId(int id) throws SQLException {
     Connection conn = null;
