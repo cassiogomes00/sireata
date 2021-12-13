@@ -4,8 +4,8 @@ public class OrgaoBO {
 
   private IDao dao;
 
-  public OrgaoBO(IDao dao) {
-    this.dao = dao;
+  public OrgaoBO(EnumDao dao) {
+    this.dao = FactoryDao.createDao(dao);
   }
 
   public Orgao buscarPorId(int id) throws Exception {
